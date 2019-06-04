@@ -1,18 +1,25 @@
 const https = require("https")
 
 const endPoint = "https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire-raw-data/"
-const apiUrl = new URL(endPoint)
 
 const request = (fields = "") =>
   new Promise((resolve, reject) => {
-    const options = { headers: { "X-Fields": fields } }
-    const req = https.get(apiUrl, options)
-    req.on("error", reject)
-    req.on("response", resp => {
-      let body = ""
-      resp.on("data", data => (body += data))
-      resp.on("end", () => resolve(body))
-    })
+    ;(function req(endPoint) {
+      https
+        .get(endPoint, { headers: { "X-Fields": fields } }, resp => {
+          if (resp.statusCode >= 300 && resp.statusCode < 400 && resp.headers.location)
+            return req(resp.headers.location)
+          else if (resp.statusCode !== 200)
+            reject(`${resp.statusCode} : ${resp.statusMessage} ${endPoint}`)
+          let body = ""
+          resp.on("data", data => (body += data))
+          resp.on("end", () => resolve(body))
+        })
+        .on("error", reject)
+    })(endPoint)
   })
 
-module.exports = async fields => JSON.parse(await request(fields))
+module.exports = fields =>
+  request(fields)
+    .then(resp => JSON.parse(resp))
+    .catch(err => err)
