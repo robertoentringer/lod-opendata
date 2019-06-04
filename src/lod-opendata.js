@@ -9,7 +9,7 @@ const request = (fields = "") =>
         .get(endPoint, { headers: { "X-Fields": fields } }, resp => {
           if (resp.statusCode >= 300 && resp.statusCode < 400 && resp.headers.location)
             return req(resp.headers.location)
-          else if (resp.statusCode !== 200)
+          if (resp.statusCode !== 200)
             reject(`${resp.statusCode} : ${resp.statusMessage} ${endPoint}`)
           let body = ""
           resp.on("data", data => (body += data))
