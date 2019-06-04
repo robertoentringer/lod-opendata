@@ -7,7 +7,6 @@
     "src"
   ],
   "scripts": {
-    "start": "node $npm_package_main",
     "lint": "eslint --fix src/**/*.js",
     "prepack": "npm run lint",
     "version": "npm run lint && git add -A",
