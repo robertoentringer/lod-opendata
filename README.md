@@ -48,6 +48,14 @@ const getMultipleFields = async () => {
   console.log(data)
 }
 getMultipleFields()
+
+// Exemple : get multiple subfields
+const getMultipleSubfields = async () => {
+  const fields = "resources/{format,title,url}"
+  const { resources : [{ format, title, url }] } = await lodAPI(fields)
+  console.log(format, title, url)
+}
+getMultipleSubfields()
 ```
 
 See all fields available :  
