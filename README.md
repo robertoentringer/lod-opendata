@@ -1,6 +1,6 @@
 # lod-opendata
 
-A NPM package for get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu
+A NPM package for get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu.
 
 Author : [Roberto Entringer](https://robertoentringer.com)  
 License: MIT  
