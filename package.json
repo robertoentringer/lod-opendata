@@ -1,6 +1,6 @@
 {
   "name": "lod-opendata",
-  "version": "0.0.21",
+  "version": "0.0.18",
   "description": "Get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu",
   "main": "src/lod-opendata.js",
   "files": [
@@ -12,7 +12,7 @@
     "prepack": "npm run lint",
     "version": "npm run lint && git add -A",
     "postversion": "git push && git push --tags",
-    "publish": "npm version patch && npm publish"
+    "publish": "npm publish"
   },
   "keywords": [
     "data",
