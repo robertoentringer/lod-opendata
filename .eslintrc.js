@@ -13,6 +13,6 @@ module.exports = {
   rules: {
     "no-console": 0,
     "prettier/prettier": ["error", { semi: false, printWidth: 100 }],
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": 0
   }
 }

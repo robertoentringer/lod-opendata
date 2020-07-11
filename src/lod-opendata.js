@@ -2,7 +2,7 @@ const https = require("https")
 
 const request = (fields, endPoint) =>
   new Promise((resolve, reject) => {
-    ; (function req(endPoint) {
+    ;(function req(endPoint) {
       https
         .get(endPoint, { headers: { "X-Fields": fields } }, (resp) => {
           if (resp.statusCode >= 300 && resp.statusCode < 400 && resp.headers.location)
@@ -17,7 +17,10 @@ const request = (fields, endPoint) =>
     })(endPoint)
   })
 
-module.exports = (fields = "", endPoint = "https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire/") =>
+module.exports = (
+  fields = "",
+  endPoint = "https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire/"
+) =>
   request(fields, endPoint)
     .then((resp) => JSON.parse(resp))
     .catch((err) => err)
