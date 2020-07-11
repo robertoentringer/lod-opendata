@@ -1,6 +1,6 @@
 const https = require("https")
 
-const endPoint = "https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire-raw-data/"
+const endPoint = "https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire/"
 
 const request = (fields = "") =>
   new Promise((resolve, reject) => {
