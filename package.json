@@ -1,7 +1,7 @@
 {
   "name": "lod-opendata",
   "version": "0.0.16",
-  "description": "A NPM package for get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu",
+  "description": "Get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu",
   "main": "src/lod-opendata.js",
   "files": [
     "src"
