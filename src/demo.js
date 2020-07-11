@@ -1,21 +1,3 @@
-# lod-opendata
-
-A NPM package for get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu.
-
-Author : [Roberto Entringer](https://robertoentringer.com)
-License: MIT
-Repo on Github : https://github.com/robertoentringer/lod-opendata
-Npm package : https://www.npmjs.com/package/lod-opendata
-
-# Installation
-
-```shell
-$ npm install lod-opendata
-```
-
-# Usage
-
-```js
 const lodAPI = require("./lod-opendata.js")
 
 // Example : get all fields
@@ -67,10 +49,3 @@ const getCustomEndPoint = async () => {
   console.log('getCustomEndPoint : ', data)
 }
 getCustomEndPoint()
-```
-
-See all fields available :
-https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire/
-
-API Documentation - Portail Open Data :
-https://data.public.lu/en/docapi/
