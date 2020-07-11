@@ -2,10 +2,10 @@
 
 A NPM package for get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu.
 
-Author : [Roberto Entringer](https://robertoentringer.com)  
-License: MIT  
-Repo on Github : https://github.com/robertoentringer/lod-opendata   
-Npm package : https://www.npmjs.com/package/lod-opendata  
+Author : [Roberto Entringer](https://robertoentringer.com)
+License: MIT
+Repo on Github : https://github.com/robertoentringer/lod-opendata
+Npm package : https://www.npmjs.com/package/lod-opendata
 
 # Installation
 
@@ -58,8 +58,8 @@ const getMultipleSubfields = async () => {
 getMultipleSubfields()
 ```
 
-See all fields available :  
-https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire-raw-data/  
+See all fields available :
+https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire/
 
-API Documentation - Portail Open Data :   
-https://data.public.lu/en/apidoc/#!/datasets/get_dataset
+API Documentation - Portail Open Data :
+https://data.public.lu/en/docapi/
