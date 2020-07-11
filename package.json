@@ -11,7 +11,8 @@
     "demo": "node src/demo.js",
     "prepack": "npm run lint",
     "version": "npm run lint && git add -A",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "publish": "npm version patch && npm publish"
   },
   "keywords": [
     "data",
