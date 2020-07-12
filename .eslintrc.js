@@ -1,18 +1,16 @@
 module.exports = {
   env: {
+    node: true,
     commonjs: true,
-    es6: true,
-    node: true
+    es6: true
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: 'module'
   },
-  plugins: ["prettier"],
   rules: {
-    "no-console": 0,
-    "prettier/prettier": ["error", { semi: false, printWidth: 100 }],
-    "comma-dangle": 0
+    'comma-dangle': ['error', 'never']
   }
 }

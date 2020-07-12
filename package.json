@@ -1,6 +1,6 @@
 {
   "name": "lod-opendata",
-  "version": "0.0.18",
+  "version": "0.0.0-development",
   "description": "Get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu",
   "main": "src/lod-opendata.js",
   "files": [
@@ -12,7 +12,8 @@
     "prepack": "npm run lint",
     "version": "npm run lint && git add -A",
     "postversion": "git push && git push --tags",
-    "publish": "npm publish"
+    "publish": "npm publish",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "data",
@@ -39,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertoentringer/lod-opendata.git"
+    "url": "https://github.com/robertoentringer/lod-opendata.git"
   },
   "bugs": {
     "url": "https://github.com/robertoentringer/lod-opendata/issues"
