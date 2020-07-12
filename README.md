@@ -72,5 +72,5 @@ getCustomEndPoint()
 See all fields available :<br>
 https://data.public.lu/api/1/datasets/letzebuerger-online-dictionnaire/
 
-API Documentation - Portail Open Data :<br>
+API Documentation - Portail Open Data : <br>
 https://data.public.lu/en/docapi/
