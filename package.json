@@ -2,14 +2,18 @@
   "name": "lod-opendata",
   "version": "0.0.0-development",
   "description": "Get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu",
-  "main": "src/lod-opendata.js",
+  "main": "index.js",
   "files": [
-    "src"
+    "index.js"
   ],
   "scripts": {
-    "lint": "eslint --fix src/**/*.js",
-    "demo": "node src/demo.js",
+    "lint": "eslint --fix **/*.js",
+    "test": "ava",
+    "test:watch": "ava --watch",
     "semantic-release": "semantic-release"
+  },
+  "ava": {
+    "verbose": true
   },
   "keywords": [
     "data",
@@ -27,7 +31,8 @@
   "author": "Roberto Entringer",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.4.0",
+    "ava": "^3.10.1",
+    "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-prettier": "^3.1.4",
@@ -36,10 +41,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robertoentringer/lod-opendata.git"
+    "url": "git+https://github.com/robertoentringer/lod-opendata.git"
   },
   "bugs": {
     "url": "https://github.com/robertoentringer/lod-opendata/issues"
   },
-  "homepage": "https://github.com/robertoentringer/lod-opendata#readme"
+  "homepage": "https://github.com/robertoentringer/lod-opendata#readme",
+  "dependencies": {}
 }
