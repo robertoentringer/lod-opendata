@@ -1,6 +1,6 @@
 {
   "name": "lod-opendata",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "description": "Get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu",
   "main": "index.js",
   "files": [
@@ -10,7 +10,7 @@
     "lint": "eslint --fix **/*.js",
     "test": "ava",
     "test:watch": "ava --watch",
-    "semantic-release": "semantic-release"
+    "prepublishOnly": "npm run lint && npm test && npm version patch && git push && git push --tags"
   },
   "ava": {
     "verbose": true
@@ -36,8 +36,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5",
-    "semantic-release": "^17.1.1"
+    "prettier": "^2.0.5"
   },
   "repository": {
     "type": "git",
