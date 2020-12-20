@@ -1,6 +1,6 @@
 {
   "name": "lod-opendata",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get data of Lëtzebuerger Online Dictionnaire (LOD) from data.public.lu",
   "main": "index.js",
   "files": [
