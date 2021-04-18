@@ -31,11 +31,11 @@
   "author": "Roberto Entringer",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^3.14.0",
-    "eslint": "^7.16.0",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-html": "^6.1.1",
-    "eslint-plugin-prettier": "^3.3.0",
+    "ava": "^3.15.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.2.1"
   },
   "repository": {
@@ -45,6 +45,5 @@
   "bugs": {
     "url": "https://github.com/robertoentringer/lod-opendata/issues"
   },
-  "homepage": "https://github.com/robertoentringer/lod-opendata#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/robertoentringer/lod-opendata#readme"
 }
